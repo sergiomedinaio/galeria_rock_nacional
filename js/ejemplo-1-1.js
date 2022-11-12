@@ -41,8 +41,14 @@
 // }
 
 const padresDelRock = document.getElementById("imagen");
+let cambioDeImagen = true;
 
 padresDelRock.addEventListener("click", (e) => {
-    padresDelRock.src = "./items/flaco-spinetta.jpg";
+    if(cambioDeImagen) {
+        padresDelRock.src = "./items/flaco-spinetta.jpg";
+    } else {
+        padresDelRock.src = "./items/charly-garcia.jpg";
+    }
+    cambioDeImagen = !cambioDeImagen;
 });
 
