@@ -39,3 +39,10 @@
 // for (let li of lisBandas) {
 //     li.style.color = li.className == 'par' ? 'blue' : 'red';
 // }
+
+const padresDelRock = document.getElementById("imagen");
+
+padresDelRock.addEventListener("click", (e) => {
+    padresDelRock.src = "./items/flaco-spinetta.jpg";
+});
+
