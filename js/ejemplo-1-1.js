@@ -44,8 +44,7 @@ const padresDelRock = document.getElementById("imagen");
 let cambioDeImagen = true;
 
 padresDelRock.addEventListener("click", (e) => {
-    padresDelRock.src = cambioDeImagen ?  
-        "./items/flaco-spinetta.jpg" : "./items/charly-garcia.jpg";
+    padresDelRock.src = `./items/${cambioDeImagen ? 'flaco-spinetta': 'charly-garcia'}.jpg`;
     cambioDeImagen = !cambioDeImagen;
 });
 
