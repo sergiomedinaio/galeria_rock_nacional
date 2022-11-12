@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>DOM I - Ejercicio 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+        <link rel="shortcut icon" href="../res/favicon.ico" />
+        <link rel="stylesheet" href="../res/css/styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>DOM I - Ejercicio 2</h1>
+        </header>
+        <main>
+            <h2>Simulacro de modificación de contraseñas</h2>
+            <p>Sin modificar el HTML, al hacerle click al input del tipo button, hacer lo siguiente:</p>
+            <ul>
+                <li>Obtener el value de los dos input del tipo text.</li>
+                <li>
+                    Comparar si sus valores son iguales y en base a la respuesta, en el p con id #mensaje mostrar:
+                    <ul>
+                        <li>Si coinciden: un mensaje en color verde que diga que son iguales.</li>
+                        <li>Si no coinciden: un mensaje en color rojo que diga que los valores son distintos.</li>
+                        <li>Si uno o ambos campos están vacíos: un mensaje en color azul que diga que falta completar uno o ambos campos.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Si el usuario se equivoca 3 veces, deshabilitar el botón y mostrar un mensaje color naranja en el p#mensaje que diga que fue bloqueado por seguridad.</p>
+            <hr />
+            <div>
+                <h2>Modifique su contraseña</h2>
+                <form action="#">
+                    <div>
+                        <label>Ingrese la clave nueva:</label>
+                        <input type="text" id="clave1" name="clave1" />
+                    </div>
+                    <div>
+                        <label>Vuelva a ingresarla:</label>
+                        <input type="text" id="clave2" name="clave2" />
+                    </div>
+                    <div>
+                        <input type="button" value="Comparar claves" id="boton" />
+                    </div>
+                </form>
+                <p id="mensaje"></p>
+            </div>
+        </main>
+        <footer>
+            <ul>
+                <li>Profesor Sergio Medina</li>
+                <li>
+                    <a href="mailto:sergiod.medina@davinci.edu.ar?subject=P1%20-%20Consulta%20-%20DW2[M|T|N][A|B]%20-%20Apellido,%20Nombre" target="_blank">sergiod.medina@davinci.edu.ar</a>
+                </li>
+                <li>Programación 1</li>
+            </ul>
+        </footer>
+        <script src="js/ejercicio-2-1.js"></script>
+    </body>
+</html>
