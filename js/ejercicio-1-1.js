@@ -10,9 +10,11 @@ const txtFlaco = 'El <em>flaco</em> Spinetta tocando la guitarra';
 
 // La imagen:
 let img = {};
+img = document.getElementById("imagen");
 
 // El texto:
 let txt = {};
+txt = document.getElementById("texto");
 
 // Colocamos el color en red:
 txt.style.color = 'red';
@@ -20,9 +22,15 @@ txt.style.color = 'red';
 // Asignamos un escuchador de eventos para el click de la imagen:
 img.addEventListener('click', (e) => {
     // Debo saber cuál es el src actual:
+
+    console.log(e.target.dataset.musico);
     if (e.target.dataset.musico == 'charly') {
         // Cambio al Flaco:
+        img.dataset.musico = 'spinetta';
+        img.src = srcFlaco;
     } else {
         // Cambio a Charly:
+        img.dataset.musico = 'charly';
+        img.src = srcCharly;
     }
 });
