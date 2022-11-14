@@ -9,10 +9,10 @@ let cl1,
     err = 1;
 
 // Obtengo todos los objetos:
-cl1 = {};
-cl2 = {};
-btn = {};
-msj = {};
+cl1 = document.getElementById("clave1");
+cl2 = document.getElementById("clave2");
+btn = document.getElementById("boton");
+msj = document.getElementById("mensaje");
 
 // Asigno una función anónima al evento onclick del botón:
 btn.addEventListener('click', (e) => {
