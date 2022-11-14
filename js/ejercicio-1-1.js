@@ -28,9 +28,15 @@ img.addEventListener('click', (e) => {
         // Cambio al Flaco:
         img.dataset.musico = 'spinetta';
         img.src = srcFlaco;
+        img.alt = altFlaco;
+        txt.style.color = 'blue';
+        txt.innerHTML = txtFlaco;
     } else {
         // Cambio a Charly:
         img.dataset.musico = 'charly';
         img.src = srcCharly;
+        img.alt = altCharly;
+        txt.style.color = 'red';
+        txt.innerHTML = txtCharly;
     }
 });
